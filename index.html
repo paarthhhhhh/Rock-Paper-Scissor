@@ -7,6 +7,9 @@
 </head>
 <body>
     <script>
+        let humanScore = 0;
+        let computerScore = 0;
+
         function getComputerChoice(){
             let computerChoice;
             let choice = Math.random();
@@ -17,9 +20,14 @@
                 computerChoice = "Paper";
             }
             else{
-                computerChoice = '"Scissor"';
+                computerChoice = "Scissor";
             }
             return computerChoice;
+        }
+        
+        function getHumanChoice(){
+            let humanChoice = prompt("What do you choose?");
+            return humanChoice;
         }
     </script>
 </body>
